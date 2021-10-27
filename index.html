@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Henry's Halloween Story</title>
 </head>
 <body>
-
-    <p>Tonight is the night when all of the ADJECTIVE Monsters come out to VERB.</p>
-    <p>My name is NAME and this year I'm dressing up as a COSTUME to go trick or treating. FAMILY MEMBER is going with me - they are dressed up as a COSTUME2.</p>
-    <p>I hope we see a CREATURE tonight so I can say HAPPY HALLOWEEN!</p>
-    
+    <h1>Henry's Halloween Story</h1>
+    <div id="storyInput">
+        <p class="questionHead">First, some questions for you:</p>
+        <p>Pick a verb (an action):
+            <input id="verb" type="text" placeholder="verb"/>
+        </p>
+        <p>What's your name:
+            <input id="myName" type="text" placeholder="my name"/>
+        </p>
+        <p>Pick your costume:
+            <input id="myCostume" type="text" placeholder="my costume"/>
+        </p>
+        <p>Pick a family member:
+            <input id="familyMember" type="text" placeholder="family member"/>
+        </p>
+        <p>Pick your family members costume:
+            <input id="familyCostume" type="text" placeholder="family member's costume"/>
+        </p>
+        <p>Pick a number between 1 and 100:
+            <input id="qty" type="number" placeholder="a number"/>
+        </p>
+        <p>Pick a spooky creature:
+            <input id="creature" type="text" placeholder="spooky creature"/>
+        </p>
+        <button id="submit">Submit your answers</button>
+        <p id="warning">Remeber to answer ALL the questions to get the full story!</p>
+    </div>
+    <div id="storyOutput">
+        <p>Henry's Halloween Story...</p>
+        <p id="theStory">something</p>
+        <button id="again">Make a new story!</button>
+    </div>
+    <script src="./madlib.js"></script>
 </body>
 </html>
-
-<!--  -->
