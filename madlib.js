@@ -39,9 +39,8 @@ again.addEventListener('click', resetPage, false);
         storyOutput.className = "displayBlock";
         warning.className = "displayNone";
         body.style.backgroundColor = 'black';
-        body.style.color = '#ffa963';
-        };
 }
+ }
 
 function checkComplete() {
     //verify the user filled in the form
@@ -60,8 +59,8 @@ function writeStory(){
         return 
     }
     let finishedStory = '';
-    finishedStory+= 'Tonight is the night when all of the spooky Monsters come out to play. <br>My name is ' + myName.value + " and this year I'm going trick-or-treating dressed as a " + myCostume.value + '. <br>' + familyMember.value + ' is going with me, dressed as a ' + familyCostume.value + '. '+ '<br>I hope we see ' + qty.value + '  ' + pickCreature(qty.value) + ' tonight so I can tell them HAPPY HALLOWEEN!'
-    theStory.innerHTML = finishedStory
+    finishedStory+= 'Tonight is the night when all of the spooky Monsters come out to play. <br>My name is <span class="specialValue">' + myName.value + ' </span> and this year I am going trick-or-treating dressed as a <span class="specialValue">' + myCostume.value + '</span>. <br> <span class="specialValue">' + familyMember.value + ' </span> is going with me, dressed as a <span class="specialValue">' + familyCostume.value + '</span>. <br>I hope we see <span id="spookyValue">' + qty.value + ' ' + pickCreature(qty.value) + ' </span> tonight so I can tell them <br><span id="halloweenValue">HAPPY HALLOWEEN!</span>'
+    theStory.innerHTML = finishedStory;
 };
 
 function pickCreature(num) {
@@ -92,8 +91,8 @@ function resetPage() {
     storyInput.className= "displayBlock";
     storyOutput.className = "displayNone";
     warning.className = "displayNone";
-    body.style.backgroundColor = '#26003b';
-    body.style.color = 'lavender';
+    body.style.backgroundColor = 'lavender';
+    body.style.color = '#26003b';
 
     myName.value = '';
     myCostume.value = '';

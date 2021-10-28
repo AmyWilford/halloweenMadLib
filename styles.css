@@ -12,7 +12,7 @@ header {
     background-size: cover;
     height: 350px;
 }
-h1 {
+#inputHead {
     font-family: 'Bevan', cursive;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -35,12 +35,17 @@ h2 {
     display: block;
 }
 
+#submit {
+    background-color: yellow;
+}
 
+#again {
+    background-color: #ffa963;
+}
 button {
     font-family: 'Bevan', cursive;
     letter-spacing: 2px;
     border-radius: 4px;
-    background-color: yellow;
     border: none;
     border-radius: 10px;
     border: 2px solid #26003b;
@@ -78,7 +83,44 @@ button {
     right: 0;
   }
 
+#storyOutput {
+    margin:100px 300px;
+    line-height: 2em;
+    font-size: 20px;
+    color: #ffa963;
+}
+
+#outputHead {
+    font-family: 'Bevan', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    margin: 0px;
+}
+
 #image {
-    width: 600px;
+    width: 400px;
     padding: 0px;
+}
+.specialValue {
+    font-family: 'Bevan', cursive;
+    letter-spacing: 5px;
+    font-size:24px;
+    color: #b863ff
+}
+#spookyValue,  #halloweenValue{
+    font-family: 'Creepster', cursive;
+    letter-spacing: 5px;
+    color: #b863ff
+}
+
+#spookyValue {
+    font-size: 26px;
+    color: #b863ff
+}
+
+#halloweenValue {
+    font-size: 40px;
+    color: #b863ff
 }

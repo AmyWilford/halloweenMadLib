@@ -8,38 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Creepster&display=swap" rel="stylesheet">    <title>Henry's Halloween Story</title>
 </head>
 <body id="body">
-    <header>
-        <h1>Henry's <br> Halloween Story</h1>
-    </header>
+
     <div id="storyInput">
-       
+        <header id="header">
+            <h1 id="inputHead">Henry's <br> Halloween Story</h1>
+        </header>
         <h2>Choose your adventure</h2>  
-        <p>1. What's your name: 
-            <input autocomplete="off" id="myName" type="text" placeholder="my name"/>
+        <p>Your name: 
+            <input autocomplete="off" id="myName" type="text"/>
         </p>
-        <p>2. Pick your costume: 
-            <input autocomplete="off" id="myCostume" type="text" placeholder="pick a costume"/>
+        <p>Pick your costume: 
+            <input autocomplete="off" id="myCostume" type="text"/>
         </p>
-        <p>3. Pick a family member: 
-            <input autocomplete="off" id="familyMember" type="text" placeholder="family member"/>
+        <p>Pick a family member: 
+            <input autocomplete="off" id="familyMember" type="text"/>
         </p>
-        <p>4. Pick your family members costume: 
-            <input id="familyCostume" type="text" autocomplete="off" placeholder="pick a costume"/>
+        <p>Pick their costume: 
+            <input id="familyCostume" type="text" autocomplete="off"/>
         </p>
-        <p>5. Pick a number between 1 and 5: 
-            <input id="qty" type="number" placeholder="a number"/>
+        <p>Pick a number between 1 and 5: 
+            <input id="qty" type="number"/>
         </p>
         <button id="submit"><span>ready for your story?</span></button>
         <p id="warning">Remeber to answer <b>ALL</b> the questions to get the full story!</p>
     </div>
     <div id="storyOutput">
-        <p>Henry's Halloween Story...</p>
+        <h1 id="outputHead">Henry's Halloween Story...</h1>
         <p id="theStory">something</p>
         <div>
             <img id="image" src=""/>
         </div>
-        <button id="again">Make a new story!</button>
+        <button id="again"><span>Make a new story!</span></button>
     </div>
     <script src="./madlib.js"></script>
 </body>
 </html>
+
