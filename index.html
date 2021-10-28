@@ -5,32 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Irish+Grover&family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
     <title>Henry's Halloween Story</title>
 </head>
-<body>
-    <h1>Henry's Halloween Story</h1>
+<body id="body">
     <div id="storyInput">
-        <p class="questionHead">First, some questions for you:</p>
-        <p>Pick a verb (an action):
-            <input id="verb" type="text" placeholder="verb"/>
+        <h1 id="title">Henry's Halloween Story</h1>
+        <p id="questionHead">First, some questions for you:</p>
+        <p>1. What's your name: 
+            <input autocomplete="off" id="myName" type="text" placeholder="my name"/>
         </p>
-        <p>What's your name:
-            <input id="myName" type="text" placeholder="my name"/>
+        <p>2. Pick your costume: 
+            <input autocomplete="off" id="myCostume" type="text" placeholder="pick a costume"/>
         </p>
-        <p>Pick your costume:
-            <input id="myCostume" type="text" placeholder="my costume"/>
+        <p>3. Pick a family member: 
+            <input autocomplete="off" id="familyMember" type="text" placeholder="family member"/>
         </p>
-        <p>Pick a family member:
-            <input id="familyMember" type="text" placeholder="family member"/>
+        <p>4. Pick your family members costume: 
+            <input id="familyCostume" type="text" autocomplete="off" placeholder="pick a costume"/>
         </p>
-        <p>Pick your family members costume:
-            <input id="familyCostume" type="text" placeholder="family member's costume"/>
-        </p>
-        <p>Pick a number between 1 and 100:
+        <p>5. Pick a number between 1 and 5: 
             <input id="qty" type="number" placeholder="a number"/>
-        </p>
-        <p>Pick a spooky creature:
-            <input id="creature" type="text" placeholder="spooky creature"/>
         </p>
         <button id="submit">Submit your answers</button>
         <p id="warning">Remeber to answer ALL the questions to get the full story!</p>
@@ -38,6 +33,9 @@
     <div id="storyOutput">
         <p>Henry's Halloween Story...</p>
         <p id="theStory">something</p>
+        <div>
+            <img id="image" src=""/>
+        </div>
         <button id="again">Make a new story!</button>
     </div>
     <script src="./madlib.js"></script>

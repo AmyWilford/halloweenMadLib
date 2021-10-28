@@ -1,9 +1,53 @@
 body {
     margin: 10%;
-    background-color: #250041;
-    color: #d1ff63;
-    font-size: 18px;
+    background-color: #26003b;
+    color: lavender;
+    font-size: 16px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    font-family: 'Irish Grover', cursive; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+#questionHead {
+    margin-bottom: 30px;
+    font-family:'Chewy', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+#storyInput {
+    font-weight: 100;
+}
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    color: #26003b;
+    background-color: lavender;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family:'Chewy', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+button:active {
+    background-color: #ffa963;
+}
+#image {
+    width: 300px;
 }
