@@ -1,30 +1,32 @@
 body {
-    margin: 10%;
-    background-color: #26003b;
-    color: lavender;
     font-size: 16px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    color:#26003b;
+    background-color: #E6E6FA;
 }
-
-#title {
-    font-family: 'Irish Grover', cursive; 
+header {
+    background-image: url('./resources/headerbackground.png');
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+h1 {
+    font-family: 'Bevan', cursive;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 30px;
-}
-#questionHead {
-    margin-bottom: 30px;
-    font-family:'Chewy', cursive;
-    font-size: 20px;
-    letter-spacing: 2px;
-
+    padding: 100px 0px;
+    line-height: 1.5em;
+    color: yellow;
+    font-size: 50px;
+    margin: 0px;
 }
 
-#storyInput {
-    font-weight: 100;
+h2 {
+    margin-bottom: 30px;
+    text-transform: lowercase;
+
 }
 .displayNone {
     display: none;
@@ -33,21 +35,50 @@ body {
     display: block;
 }
 
+
 button {
-    cursor: pointer;
-    color: #26003b;
-    background-color: lavender;
+    font-family: 'Bevan', cursive;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background-color: yellow;
     border: none;
     border-radius: 10px;
+    border: 2px solid #26003b;
+    color:#26003b;
+    text-align: center;
+    font-size: 16px;
     padding: 10px;
-    font-family:'Chewy', cursive;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-button:active {
-    background-color: #ffa963;
-}
-#image {
     width: 300px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#image {
+    width: 600px;
+    padding: 0px;
 }

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Irish+Grover&family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
-    <title>Henry's Halloween Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Creepster&display=swap" rel="stylesheet">    <title>Henry's Halloween Story</title>
 </head>
 <body id="body">
+    <header>
+        <h1>Henry's <br> Halloween Story</h1>
+    </header>
     <div id="storyInput">
-        <h1 id="title">Henry's Halloween Story</h1>
-        <p id="questionHead">First, some questions for you:</p>
+       
+        <h2>Choose your adventure</h2>  
         <p>1. What's your name: 
             <input autocomplete="off" id="myName" type="text" placeholder="my name"/>
         </p>
@@ -27,8 +29,8 @@
         <p>5. Pick a number between 1 and 5: 
             <input id="qty" type="number" placeholder="a number"/>
         </p>
-        <button id="submit">Submit your answers</button>
-        <p id="warning">Remeber to answer ALL the questions to get the full story!</p>
+        <button id="submit"><span>ready for your story?</span></button>
+        <p id="warning">Remeber to answer <b>ALL</b> the questions to get the full story!</p>
     </div>
     <div id="storyOutput">
         <p>Henry's Halloween Story...</p>
