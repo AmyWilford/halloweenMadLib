@@ -42,7 +42,9 @@ h2 {
     background-color: #f77e1c;
 }
 #again {
-    background-color: #b863ff;
+    background-color: black;
+    color: #b863ff;
+    border: 2px solid #b863ff;
 }
 button {
     font-family: 'Bevan', cursive;
@@ -99,7 +101,7 @@ button {
     margin:50px 150px;
     line-height: 2em;
     font-size: 24px;
-    color: #b863ff;
+    color: white;
 }
 
 #outputHead {
@@ -109,7 +111,9 @@ button {
     padding-bottom: 30px;
     font-size: 30px;
     margin: 0px;
+    color: #f77e1c
 }
+
 
 #image {
     width: 550px;
@@ -118,17 +122,17 @@ button {
 .specialValue {
     font-family: 'Bevan', cursive;
     letter-spacing: 5px;
-    color: #f77e1c;
+    color: #b863ff;
 }
 
-#spookyOrange, #spookyValue,  #halloweenValue{
+.spookyValue,  #halloweenValue{
     font-family: 'Creepster', cursive;
     letter-spacing: 5px;
 }
 
-#spookyValue {
+.spookyValue {
     font-size: 26px;
-    color:yellow;
+    color:#b863ff;
 }
 
 #halloweenValue {
