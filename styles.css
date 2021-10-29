@@ -43,8 +43,11 @@ h2 {
 }
 #again {
     background-color: black;
-    color: #b863ff;
-    border: 2px solid #b863ff;
+    color: #f77e1c;
+}
+#again:hover {
+    background-color: #f77e1c;
+    color: black;
 }
 button {
     font-family: 'Bevan', cursive;
@@ -131,7 +134,7 @@ button {
 }
 
 .spookyValue {
-    font-size: 26px;
+    font-size: 30px;
     color:#b863ff;
 }
 
