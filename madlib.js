@@ -16,34 +16,19 @@ let submit = document.querySelector('#submit');
 submit.addEventListener("click", writeStory);
 
 document.querySelector('#myName').focus();
-window.addEventListener('keydown', keydownHandler, false);
+window.addEventListener('keydown', keydownHandler);
+
 
 const again = document.querySelector('#again');
-again.addEventListener('click', resetPage, false);
+again.addEventListener('click', resetPage);
 
- //This is already displayblock by default  - but clariying now will make it easier in the future
  storyInput.className= "displayBlock";
  storyOutput.className = "displayNone";
  warning.className = "displayNone";
 
- myName.focus();
-
-// function to make enter key submit answer 
- function keydownHandler(event) {
-    // asci keycodes - each key on keyboard has its own keycode
-    if(event.keyCode === 13) {
-        console.log('Enter key pressed');
-        writeStory()
-
-        storyInput.className= "displayNone";
-        storyOutput.className = "displayBlock";
-        warning.className = "displayNone";
-        body.style.backgroundColor = 'black';
-}
- }
+ myName.focus(); 
 
 function checkComplete() {
-    //verify the user filled in the form
     if(myName.value =='' || myCostume.value== '' || familyMember.value =='' || familyCostume.value =='' || qty.value =='') {
         warning.className = 'displayBlock';
         return false
@@ -59,9 +44,22 @@ function writeStory(){
         return 
     }
     let finishedStory = '';
-    finishedStory+= 'Tonight is the night when all of the spooky Monsters come out to play. <br>My name is <span class="specialValue">' + myName.value + ' </span> and this year I am going trick-or-treating dressed as a <span class="specialValue">' + myCostume.value + '</span>. <br> <span class="specialValue">' + familyMember.value + ' </span> is going with me, dressed as a <span class="specialValue">' + familyCostume.value + '</span>. <br>I hope we see <span id="spookyValue">' + qty.value + ' ' + pickCreature(qty.value) + ' </span> tonight so I can tell them <br><span id="halloweenValue">HAPPY HALLOWEEN!</span>'
+    finishedStory+= 'Tonight is the night when all of the <span id="spookyOrange">spooky Monsters </span>come out to play. <br>My name is <span class="specialValue">' + myName.value + ' </span> and this year I am going trick-or-treating dressed as a <span class="specialValue">' + myCostume.value + '</span>. <span class="specialValue">' + familyMember.value + ' </span> is going with me, dressed as a <span class="specialValue">' + familyCostume.value + '</span>. <br>I hope we see <span id="spookyValue">' + qty.value + ' ' + pickCreature(qty.value) + ' </span> tonight. <br>I will wish them a <br><span id="halloweenValue">HAPPY HALLOWEEN!</span>'
     theStory.innerHTML = finishedStory;
 };
+
+function keydownHandler(event) {
+    // asci keycodes - each key on keyboard has its own keycode
+    if(event.keyCode === 13 && checkComplete()===true) {
+        console.log('Enter key pressed');
+        writeStory();
+
+        storyInput.className= "displayNone";
+        storyOutput.className = "displayBlock";
+        warning.className = "displayNone";
+        body.style.backgroundColor = 'black';
+    }
+ }
 
 function pickCreature(num) {
     if (num === '1') {
@@ -91,7 +89,7 @@ function resetPage() {
     storyInput.className= "displayBlock";
     storyOutput.className = "displayNone";
     warning.className = "displayNone";
-    body.style.backgroundColor = 'lavender';
+    body.style.backgroundColor = 'white';
     body.style.color = '#26003b';
 
     myName.value = '';

@@ -12,34 +12,45 @@
     <div id="storyInput">
         <header id="header">
             <h1 id="inputHead">Henry's <br> Halloween Story</h1>
+            <div id="henryImage">
+                <img src="resources/henry.png">
+            </div>
         </header>
         <h2>Choose your adventure</h2>  
-        <p>Your name: 
-            <input autocomplete="off" id="myName" type="text"/>
-        </p>
-        <p>Pick your costume: 
-            <input autocomplete="off" id="myCostume" type="text"/>
-        </p>
-        <p>Pick a family member: 
-            <input autocomplete="off" id="familyMember" type="text"/>
-        </p>
-        <p>Pick their costume: 
-            <input id="familyCostume" type="text" autocomplete="off"/>
-        </p>
-        <p>Pick a number between 1 and 5: 
-            <input id="qty" type="number"/>
-        </p>
+        <table class="table">
+            <tr>
+                <td>Your name:</td>
+                <td><input autocomplete="off" id="myName" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Pick your costume:</td>
+                <td><input autocomplete="off" id="myCostume" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Pick a family member: </td>
+                <td><input autocomplete="off" id="familyMember" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Pick their costume: </td>
+                <td><input id="familyCostume" type="text" autocomplete="off"/></td>
+            </tr>
+            <tr>
+                <td>Pick a number between 1 and 5: </td>
+                <td><input id="qty" type="number"/></td>
+            </tr>
+        </table>
         <button id="submit"><span>ready for your story?</span></button>
         <p id="warning">Remeber to answer <b>ALL</b> the questions to get the full story!</p>
     </div>
     <div id="storyOutput">
         <h1 id="outputHead">Henry's Halloween Story...</h1>
-        <p id="theStory">something</p>
+        <p id="theStory"></p>
         <div>
             <img id="image" src=""/>
         </div>
         <button id="again"><span>Make a new story!</span></button>
     </div>
+
     <script src="./madlib.js"></script>
 </body>
 </html>

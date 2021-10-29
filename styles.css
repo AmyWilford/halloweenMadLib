@@ -1,25 +1,25 @@
+/* general page styles */
 body {
     font-size: 16px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     color:#26003b;
-    background-color: #E6E6FA;
 }
 header {
-    background-image: url('./resources/headerbackground.png');
-    background-position: center;
-    background-size: cover;
-    height: 350px;
+    background-color:#f77e1c;
+}
+#henryImage img {
+    width: 250px;
 }
 #inputHead {
     font-family: 'Bevan', cursive;
     text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 100px 0px;
+    padding-top: 50px;
     line-height: 1.5em;
-    color: yellow;
-    font-size: 50px;
+    color: #26003b;
+    font-size: 30px;
     margin: 0px;
 }
 
@@ -28,27 +28,28 @@ h2 {
     text-transform: lowercase;
 
 }
-.displayNone {
-    display: none;
-}
-.displayBlock {
-    display: block;
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-bottom: 30px;
 }
 
+/* button styles */
 #submit {
-    background-color: yellow;
+    color:#26003b;
+    background-color: #f77e1c;
 }
-
 #again {
-    background-color: #ffa963;
+    background-color: #b863ff;
 }
 button {
     font-family: 'Bevan', cursive;
-    letter-spacing: 2px;
-    border-radius: 4px;
+    background-color: #f77e1c;
     border: none;
+    letter-spacing: 2px;
     border-radius: 10px;
-    border: 2px solid #26003b;
     color:#26003b;
     text-align: center;
     font-size: 16px;
@@ -74,53 +75,64 @@ button {
     transition: 0.5s;
   }
   
+  
   button:hover span {
     padding-right: 25px;
+    
   }
   
   button:hover span:after {
     opacity: 1;
     right: 0;
+    
   }
 
+/* transition styles */
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
+/* story output */
 #storyOutput {
-    margin:100px 300px;
+    margin:50px 150px;
     line-height: 2em;
-    font-size: 20px;
-    color: #ffa963;
+    font-size: 24px;
+    color: #b863ff;
 }
 
 #outputHead {
     font-family: 'Bevan', cursive;
     text-transform: uppercase;
     letter-spacing: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-size: 30px;
     margin: 0px;
 }
 
 #image {
-    width: 400px;
+    width: 550px;
     padding: 0px;
 }
 .specialValue {
     font-family: 'Bevan', cursive;
     letter-spacing: 5px;
-    font-size:24px;
-    color: #b863ff
+    color: #f77e1c;
 }
-#spookyValue,  #halloweenValue{
+
+#spookyOrange, #spookyValue,  #halloweenValue{
     font-family: 'Creepster', cursive;
     letter-spacing: 5px;
-    color: #b863ff
 }
 
 #spookyValue {
     font-size: 26px;
-    color: #b863ff
+    color:yellow;
 }
 
 #halloweenValue {
-    font-size: 40px;
-    color: #b863ff
+    font-size: 50px;
+    color: #f77e1c;
+    line-height: 70px;
 }
