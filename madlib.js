@@ -50,8 +50,13 @@ function writeStory(){
         return 
     }
     let finishedStory = '';
-    finishedStory+= 'Tonight is the night when all of the <span class="spookyValue">spooky Monsters </span>come out to play. <br>My name is <span class="specialValue">' + myName.value + ' </span> and this year I am going trick-or-treating dressed as a <span class="specialValue">' + myCostume.value + '</span>. <span class="specialValue">' + familyMember.value + ' </span> is going with me, dressed as a <span class="specialValue">' + familyCostume.value + '</span>. <br>I hope we see <span class="spookyValue">' + qty.value + ' ' + pickCreature(qty.value) + ' </span> tonight. <br>I will wish them a <br><span id="halloweenValue">HAPPY HALLOWEEN!</span>'
+    finishedStory+= 'Tonight is the night when all of the <span class="spookyValue">spooky Monsters </span>come out to play. <br>My name is <span class="specialValue">' + myName.value + ' </span> and this year I am going trick-or-treating dressed as a <span class="specialValue">' + myCostume.value + '</span>. <span class="specialValue">' + familyMember.value + ' </span> is going with me, dressed as a <span class="specialValue">' + familyCostume.value + '</span>. <br>I hope we see <span class="spookyValue">' + qty.value + ' ' + pickCreature(qty.value) + ' </span> tonight. <br>If we do - I will wish them a <br><span id="halloweenValue">HAPPY HALLOWEEN!</span>'
     theStory.innerHTML = finishedStory;
+    storyInput.className= "displayNone";
+    storyOutput.className = "displayBlock";
+    warning.className = "displayNone";
+    numberWarning.className = "displayNone";
+    body.style.backgroundColor = 'black';
 };
 
 function keydownHandler(event) {
@@ -60,11 +65,6 @@ function keydownHandler(event) {
         console.log('Enter key pressed');
         writeStory();
 
-        storyInput.className= "displayNone";
-        storyOutput.className = "displayBlock";
-        warning.className = "displayNone";
-        numberWarning.className = "displayNone";
-        body.style.backgroundColor = 'black';
     }
  }
 
